@@ -30,7 +30,10 @@ Get-ChildItem -Path "C:\" -Filter "*.exe" -Recurse -File -ErrorAction SilentlyCo
         }
 
         if (-not $isTrusted) {
-            $_.FullName
+            $pathWithQuotes = "`"$($_.FullName)`""
+            
+            $pathWithQuotes
+            
             Write-Host "[+]: $($_.FullName)" -ForegroundColor Yellow
         }
     } | Out-File -FilePath $outputPath -Encoding utf8
