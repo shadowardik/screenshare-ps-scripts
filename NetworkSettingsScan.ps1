@@ -9,7 +9,7 @@ if (-not $isAdmin) {
     exit
 }
 
-Write-Host " -> Network Settings Checker by qwersome (based on Kaiman4ik)" -ForegroundColor DarkMagenta
+Write-Host " -> Network Settings Checker by qwersome (based on https://github.com/Kaiman30/NetworkSettingsChecker/blob/main/NetworkChecker.PS1)" -ForegroundColor DarkMagenta
 Write-Host ""
 
 $totalSteps = 8
